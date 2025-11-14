@@ -18,7 +18,7 @@ grant all privileges on database snowflake_intelligence to role snowflake_intell
 create warehouse if not exists dash_agent_wh warehouse_size=large auto_suspend=300 auto_resume=true initially_suspended=false;
 use warehouse dash_agent_wh;
 
-create or replace schema snowflake_intelligence.agents;
+CREATE SCHEMA IF NOT EXISTS snowflake_intelligence.agents;
 grant create agent on schema snowflake_intelligence.agents to role snowflake_intelligence_admin;
 
 create database if not exists dash_agent_slack;
