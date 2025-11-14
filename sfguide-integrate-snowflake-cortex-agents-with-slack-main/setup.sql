@@ -60,7 +60,7 @@ CREATE AUTHENTICATION POLICY IF NOT EXISTS pat_authentication_policy2
   pat_policy=(
     network_policy_evaluation = ENFORCED_NOT_REQUIRED
 );
-alter user IDENTIFIER($current_user) set authentication policy pat_authentication_policy2;
+-- run this if policy not working:alter user IDENTIFIER($current_user) set authentication policy pat_authentication_policy2;
 
 
 select 'Congratulations! Setup has completed successfully!' as status;
