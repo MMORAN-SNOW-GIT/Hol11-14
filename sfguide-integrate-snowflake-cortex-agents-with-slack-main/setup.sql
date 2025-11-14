@@ -56,12 +56,10 @@ create or replace stage semantic_models encryption = (type = 'snowflake_sse') di
 create or replace stage pdfs encryption = (type = 'snowflake_sse') directory = ( enable = true );
 
 alter account set cortex_enabled_cross_region = 'AWS_US';
-
-create or replace authentication policy pat_authentication_policy2
+CREATE AUTHENTICATION POLICY IF NOT EXISTS pat_authentication_policy2
   pat_policy=(
     network_policy_evaluation = ENFORCED_NOT_REQUIRED
 );
-
 alter user IDENTIFIER($current_user) set authentication policy pat_authentication_policy2;
 
 
