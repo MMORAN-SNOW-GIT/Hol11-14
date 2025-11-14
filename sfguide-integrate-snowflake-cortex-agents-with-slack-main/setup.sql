@@ -22,7 +22,7 @@ create or replace schema snowflake_intelligence.agents;
 grant create agent on schema snowflake_intelligence.agents to role snowflake_intelligence_admin;
 
 create database if not exists dash_agent_slack;
-use Role ACCOUNTADMIN;
+
 create schema if not exists dash_agent_slack.data;
 
 use database dash_agent_slack;
