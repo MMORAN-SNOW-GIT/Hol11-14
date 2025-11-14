@@ -1,6 +1,5 @@
 # Hol11-14
-Link to code and links:
-https://docs.google.com/document/d/1x6E-7LqaEzHO8WMM52c47wvDFTpo05jZJPS6iCsI49I/edit?tab=t.0
+
 
 Slack Application Creation: Create a Slack application here.
 Alternate Bolt App Initialization: Alternatively, use the following Slack commands to initialize a Bolt application:
