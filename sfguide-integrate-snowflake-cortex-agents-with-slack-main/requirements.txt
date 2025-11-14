@@ -1,0 +1,10 @@
+slack_bolt
+snowflake-connector-python
+requests
+pandas
+numpy
+python-dotenv
+matplotlib
+
+
+
